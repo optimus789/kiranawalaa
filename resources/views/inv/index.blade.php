@@ -11,7 +11,7 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title"> Inventory <a href="/inv-create" class="btn btn-success float-right">+ Add Item</a></h4>
+              <h4 class="card-title"> Inventory <a href="/inv/create" class="btn btn-success float-right">+ Add Item</a></h4>
               @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

@@ -33,10 +33,10 @@ Route::group(['middleware' => ['auth','admin']], function(){
     Route::get('/inventory', 'Admin\DashboardController@inventory');
     Route::put('role-register-update/{id}', 'Admin\DashboardController@registerupdate');
     Route::delete('/role-delete/{id}', 'Admin\DashboardController@registerdelete');
-    Route::get('/inv', 'InvController@index');
-    Route::get('/inv-create', 'InvController@create');
-    Route::post('/additem', 'InvController@store')->name('additem');
-    Route::get('/inv-edit/{id}', 'InvController@edit');
+    Route::get('/inv', 'Inv\InvController@index');
+    Route::get('/inv/create', 'Inv\InvController@create');
+    Route::post('/inv', 'Inv\InvController@store');
+    Route::get('/inv/edit/{id}', 'Inv\InvController@edit');
     #Route::resource('items', 'ItemController');
 });
 

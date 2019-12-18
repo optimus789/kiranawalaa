@@ -18,8 +18,10 @@ class CreateInvTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('category');
-            $table->string('rate');
-            $table->mediumText('image')->nullable();
+            $table->string('cprice');
+            $table->string('sprice');
+            $table->string('mrp');
+            $table->string('image')->nullable();
             $table->string('tax')->default('0');
             $table->string('stock');
             $table->string('units');
