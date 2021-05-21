@@ -9,4 +9,4 @@ class Items extends Model
     protected $table = 'items';
     protected $fillable = ['title','desc','category','cprice','sprice','mrp','tax','stock','units'];
 }
-// Commit 1
+// comment 2
